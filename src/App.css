@@ -1,5 +1,20 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-image: 
+    linear-gradient(#000000d8, #060a3fa6),
+    url("./res/trumpHello.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(221, 221, 221);
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +50,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  margin: 5rem auto;
+}
+
+.quote {
+  margin: 1rem auto;
+  width: 60%;
+  font-size: 2rem;
+}
+
+
+.date {
+  font-size: 0.8rem;
+}
+
+.container-small {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags {
+  margin: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.tag {
+  background-color: #282c34;
+  color: rgb(141, 141, 141);
+  padding: 0.5rem 0.5rem;
+  border-radius: 8px;
+}
+
+.score-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 0;
+}
+
+.score-list-item {
+  padding: 1rem 1.2rem;
+  color: white;
+  background-color: rgb(253, 87, 87);
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: all .2s ease-out;
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
+}
+
+.score-list-item:hover {
+  background-color: rgb(54, 97, 228);
+  transform: translateY(-3px);
+}
+
+.score-list-item:active {
+  background-color: rgb(54, 97, 228);
+  transform: translateY(2px);
+}
+
+.disabled {
+  transition: all .3s ease-out;
+  transform: rotateX(90deg);
+  opacity: 0;
+}
+
+.btn-next-quote {
+  padding: 1rem 1rem;
+  border-radius: 16px;
+  border: none;
+  box-shadow: 0 1rem 2rem rgba(0,0,0, .3);
+  background-color: rgb(54, 97, 228);
+  color: rgb(238, 238, 238);
+  cursor: pointer;
+  transition: all .2s ease-out;
+  margin-top: 2rem;
+}
+
+.btn-next-quote:focus {
+  outline: none;
+}
+
+.btn-next-quote:hover, .btn-next-quote:active {
+  background-color:  rgb(253, 87, 87);
+  transform: translateY(-5px);
+  box-shadow: 0 2rem 4rem rgba(0,0,0, .3);
+}
+
+.thanks {
+  background-color:  rgb(253, 87, 87);
+  color: white;
+  padding: 0.5rem 0.8rem;
+}
+
+.bold {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.rate-title {
+  text-transform: uppercase;
+  color: rgb(139, 139, 255);
 }
