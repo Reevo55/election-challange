@@ -11,4 +11,3 @@ Created this little app using React and Firebase.
 Link to used api: https://www.tronalddump.io/
 
 ![first-photo](https://user-images.githubusercontent.com/41492536/98311492-c93f6b00-1fcf-11eb-9008-ad39cb50ac1a.png)
-![second-photo](https://user-images.githubusercontent.com/41492536/98311495-cd6b8880-1fcf-11eb-9ccd-35a2eab8db07.png)
